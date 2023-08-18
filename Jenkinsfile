@@ -14,7 +14,7 @@ pipeline {
                 sh "docker build -t my-note-app ."
             }
         }
-        stage("Deploy"){
+        stage("Deploy "){
             steps {
                 echo "Deploying the container"
                 sh "docker-compose down && docker-compose up -d"
